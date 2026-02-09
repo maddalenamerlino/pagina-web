@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Georgia, serif;
+    background-color: #000;
+    color: #eaeaea;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+section {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.content div {
+    display: flex;
+}
+
+section:last-child {
+    border-right: none;
+}
+
+
+h1, h2, h3, h4 {
+    color: #e6d700;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    text-align: left;
+    line-height: 1.05;
+
+    font-size: 26px;
+
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+
+section div p {
+    font-size: 21px;
+    line-height: 1.6;
+    width: 60%;
+}
+
+
+section div {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+    margin:48px 0;
+}
+
+
+section div h2 {
+    width: 20%;
+}
+
+
+section div img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+}
+
+
+h5 {
+    color: #e6d700;
+    font-size: 24px;
+    line-height: 1.2;
+    font-style: italic;
+    text-align: right;
+    text-transform: none;
+    margin-bottom: 10px;
+}
+
+section div:last-child {
+    flex-direction: column;
+    align-items: center;
+}
+
+section div:last-child p {
+    text-align: right;
+    font-style: italic;
+}
+
+@media screen and (max-width:600px) {
+    .content div {
+    display: block;
+}
+
+section div p {
+    width: 100%;
+}
+
+section div h2 {
+    width: 100%;
+}
+}
